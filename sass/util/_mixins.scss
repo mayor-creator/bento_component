@@ -10,7 +10,21 @@
   padding: f.rem(10);
 }
 
-@mixin tablet {
+@mixin mobile-flex {
+  display: flex;
+  flex-direction: column;
+  gap: f.rem(24);
+}
+
+@mixin tablet-flex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  gap: 0rem;
+}
+
+@mixin tablet-grid {
   padding: f.rem(32);
 }
 
