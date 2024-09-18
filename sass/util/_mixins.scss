@@ -1,2 +1,47 @@
 @use "./functions" as f;
 @use "./variables" as v;
+
+@mixin mobile-grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  gap: f.rem(32);
+  padding: f.rem(10);
+}
+
+@mixin tablet {
+  padding: f.rem(32);
+}
+
+@mixin tablet-social-media-grid-area {
+  grid-area: 1 / 1 / 3 / 9;
+}
+
+@mixin tablet-platforms-grid-area {
+  grid-area: 3 / 1 / 4 / 5;
+}
+
+@mixin tablet-schedule-grid-area {
+  grid-area: 3 / 5 / 4 / 9;
+}
+
+@mixin tablet-social-schedule-grid-area {
+  grid-area: 4 / 1 / 6 / 9;
+}
+
+@mixin tablet-followers-grid-area {
+  grid-area: 6 / 1 / 7 / 9;
+}
+
+@mixin tablet-growth-grid-area {
+  grid-area: 7 / 1 / 8 / 9;
+}
+
+@mixin tablet-create-grid-area {
+  grid-area: 8 / 1 / 9 / 5;
+}
+
+@mixin tablet-ai-grid-area {
+  grid-area: 8 / 5 / 9 / 9;
+}
