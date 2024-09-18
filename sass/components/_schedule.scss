@@ -1,0 +1,22 @@
+@use "../util/functions" as f;
+@use "../util/variables" as v;
+@use "../util/mixins" as m;
+
+.schedule {
+  background-color: var(--color-yellow500);
+  border-radius: f.rem(10);
+  padding: f.rem(16) f.rem(16) 0rem f.rem(16);
+  display: flex;
+  flex-direction: column;
+  gap: f.rem(24);
+
+  &__info {
+    font-size: f.rem(26);
+    font-weight: v.$font-medium;
+    line-height: 0.88;
+  }
+
+  &__imgContainer {
+    max-width: f.rem(208);
+  }
+}

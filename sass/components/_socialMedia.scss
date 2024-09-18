@@ -1,0 +1,37 @@
+@use "../util/functions" as f;
+@use "../util/variables" as v;
+@use "../util/mixins" as m;
+
+.social__media {
+  background-color: var(--color-purple500);
+  border-radius: f.rem(10);
+  color: var(--color-white);
+  padding: f.rem(40) f.rem(32);
+  display: flex;
+  flex-direction: column;
+  gap: f.rem(24);
+
+  &-info {
+    font-size: f.rem(46);
+    font-weight: v.$font-medium;
+    text-align: center;
+    line-height: 0.91;
+  }
+
+  &-speed {
+    color: var(--color-yellow500);
+  }
+
+  &-img {
+    max-width: f.rem(192);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &-reviewInfo {
+    font-size: f.rem(18);
+    font-weight: v.$font-regular;
+    text-align: center;
+    line-height: 1.11;
+  }
+}

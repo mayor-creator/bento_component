@@ -5,9 +5,3 @@ body {
   background-color: var(--color-white);
   font-family: v.$font-family;
 }
-
-p {
-  line-height: 0.92;
-  font-size: f.rem(26);
-  font-size: clamp(f.rem(26), 1.4929577464788732rem + 0.5633802816901408vw, f.rem(32));
-}

@@ -1,0 +1,32 @@
+@use "../util/functions" as f;
+@use "../util/variables" as v;
+@use "../util/mixins" as m;
+
+.growth {
+  border-radius: f.rem(10);
+  padding: f.rem(24);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: f.rem(24);
+
+  &__infoContainer {
+    max-width: f.rem(192);
+  }
+
+  &__imgContainer {
+    max-width: f.rem(180);
+  }
+
+  &__percent {
+    color: var(--color-black);
+    font-size: f.rem(46);
+    font-weight: v.$font-medium;
+  }
+
+  &__info {
+    color: var(--color-black);
+    font-size: f.rem(18);
+    font-weight: v.$font-regular;
+  }
+}

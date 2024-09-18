@@ -1,0 +1,7 @@
+@use "../util/functions" as f;
+@use "../util/variables" as v;
+@use "../util/mixins" as m;
+
+.wrapper {
+  @include m.mobile-grid;
+}
