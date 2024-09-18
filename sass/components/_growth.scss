@@ -1,14 +1,19 @@
 @use "../util/functions" as f;
 @use "../util/variables" as v;
 @use "../util/mixins" as m;
+@use "../util/breakpoints" as b;
 
 .growth {
   border-radius: f.rem(10);
   padding: f.rem(24);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  display: flex;
-  flex-direction: column;
-  gap: f.rem(24);
+  @include m.mobile-flex;
+
+  @include b.breakpoint(medium) {
+    @include m.tablet-growth-grid-area;
+    @include m.tablet-flex;
+    justify-content: space-between;
+  }
 
   &__infoContainer {
     max-width: f.rem(192);
@@ -22,6 +27,10 @@
     color: var(--color-black);
     font-size: f.rem(46);
     font-weight: v.$font-medium;
+
+    @include b.breakpoint(medium) {
+      font-size: f.rem(54);
+    }
   }
 
   &__info {

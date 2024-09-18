@@ -1,14 +1,19 @@
 @use "../util/functions" as f;
 @use "../util/variables" as v;
 @use "../util/mixins" as m;
+@use "../util/breakpoints" as b;
 
 .schedule {
   background-color: var(--color-yellow500);
   border-radius: f.rem(10);
   padding: f.rem(16) f.rem(16) 0rem f.rem(16);
-  display: flex;
-  flex-direction: column;
-  gap: f.rem(24);
+  @include m.mobile-flex;
+
+  @include b.breakpoint(medium) {
+    @include m.tablet-schedule-grid-area;
+    padding: f.rem(24) f.rem(24) 0rem f.rem(24);
+    gap: f.rem(16);
+  }
 
   &__info {
     font-size: f.rem(26);

@@ -1,7 +1,12 @@
 @use "../util/functions" as f;
 @use "../util/variables" as v;
 @use "../util/mixins" as m;
+@use "../util/breakpoints" as b;
 
 .wrapper {
   @include m.mobile-grid;
+
+  @include b.breakpoint(medium) {
+    @include m.tablet-grid;
+  }
 }

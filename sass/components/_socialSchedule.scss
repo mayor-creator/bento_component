@@ -1,25 +1,44 @@
 @use "../util/functions" as f;
 @use "../util/variables" as v;
 @use "../util/mixins" as m;
+@use "../util/breakpoints" as b;
 
 .social__schedule {
   background-color: var(--color-purple100);
   border-radius: f.rem(10);
   padding: f.rem(32) f.rem(16);
-  display: flex;
-  flex-direction: column;
-  gap: f.rem(24);
+  @include m.mobile-flex;
 
-  &-infoContainer {
+  @include b.breakpoint(medium) {
+    @include m.tablet-social-schedule-grid-area;
+  }
+
+  &-infoContainer,
+  &-infoContent {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  &-img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: f.rem(308);
+
+    @include b.breakpoint(medium) {
+      max-width: f.rem(357);
+    }
   }
 
   &-infoSchedule {
     font-size: f.rem(26);
     font-weight: v.$font-medium;
     text-align: center;
-    line-height: 0.92;
+    line-height: .92;
+
+    @include b.breakpoint(medium) {
+      font-size: f.rem(28);
+      line-height: .93;
+    }
   }
 
   &-info {
@@ -27,5 +46,10 @@
     font-weight: v.$font-regular;
     text-align: center;
     line-height: 1.11;
+    max-width: f.rem(280);
+
+    @include b.breakpoint(medium) {
+      max-width: f.rem(359);
+    }
   }
 }

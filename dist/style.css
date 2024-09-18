@@ -6,6 +6,11 @@
   flex-direction: column;
   gap: 1.5rem;
 }
+@media (min-width: 43.75em) {
+  .ai {
+    grid-area: 8/5/9/9;
+  }
+}
 .ai__imgContainer {
   max-width: 13.75rem;
 }
@@ -14,6 +19,12 @@
   font-size: 2rem;
   font-weight: 500;
   line-height: 0.88;
+}
+@media (min-width: 43.75em) {
+  .ai__info {
+    font-size: 2.25rem;
+    line-height: 0.83;
+  }
 }
 
 body {
@@ -29,6 +40,13 @@ body {
   flex-direction: column;
   gap: 1.5rem;
 }
+@media (min-width: 43.75em) {
+  .create {
+    grid-area: 8/1/9/5;
+    padding: 1.5rem;
+    height: 22.125rem;
+  }
+}
 .create__imgContainer {
   max-width: 11.875rem;
 }
@@ -37,6 +55,12 @@ body {
   font-size: 2rem;
   font-weight: 500;
   line-height: 0.88;
+}
+@media (min-width: 43.75em) {
+  .create__info {
+    font-size: 2.25rem;
+    line-height: 0.83;
+  }
 }
 .create__span {
   color: var(--color-purple500);
@@ -50,15 +74,37 @@ body {
   flex-direction: column;
   gap: 1.5rem;
 }
+@media (min-width: 43.75em) {
+  .followers {
+    grid-area: 6/1/7/9;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    gap: 0rem;
+  }
+}
 .followers__infoContainer {
   margin-left: auto;
   margin-right: auto;
   max-width: 16.25rem;
 }
+@media (min-width: 43.75em) {
+  .followers__infoContainer {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
 .followers__imgContainer {
   margin-left: auto;
   margin-right: auto;
   max-width: 17.375rem;
+}
+@media (min-width: 43.75em) {
+  .followers__imgContainer {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
 }
 .followers__info {
   color: var(--color-white);
@@ -66,6 +112,14 @@ body {
   font-weight: 500;
   text-align: center;
   line-height: 0.88;
+}
+@media (min-width: 43.75em) {
+  .followers__info {
+    text-align: left;
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 0.83;
+  }
 }
 
 .growth {
@@ -75,6 +129,17 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+@media (min-width: 43.75em) {
+  .growth {
+    grid-area: 7/1/8/9;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    gap: 0rem;
+    justify-content: space-between;
+  }
 }
 .growth__infoContainer {
   max-width: 12rem;
@@ -86,6 +151,11 @@ body {
   color: var(--color-black);
   font-size: 2.875rem;
   font-weight: 500;
+}
+@media (min-width: 43.75em) {
+  .growth__percent {
+    font-size: 3.375rem;
+  }
 }
 .growth__info {
   color: var(--color-black);
@@ -101,10 +171,23 @@ body {
   flex-direction: column;
   gap: 1.5rem;
 }
+@media (min-width: 43.75em) {
+  .platforms {
+    grid-area: 3/1/4/5;
+    padding: 1.5rem;
+    gap: 3.25rem;
+  }
+}
 .platforms__info {
   font-size: 1.625rem;
   font-weight: 500;
   line-height: 0.88;
+}
+@media (min-width: 43.75em) {
+  .platforms__info {
+    font-size: 1.75rem;
+    line-height: 0.93;
+  }
 }
 
 .schedule {
@@ -114,6 +197,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+@media (min-width: 43.75em) {
+  .schedule {
+    grid-area: 3/5/4/9;
+    padding: 1.5rem 1.5rem 0rem 1.5rem;
+    gap: 1rem;
+  }
 }
 .schedule__info {
   font-size: 1.625rem;
@@ -133,11 +223,22 @@ body {
   flex-direction: column;
   gap: 1.5rem;
 }
+@media (min-width: 43.75em) {
+  .social__media {
+    grid-area: 1/1/3/9;
+  }
+}
 .social__media-info {
   font-size: 2.875rem;
   font-weight: 500;
   text-align: center;
   line-height: 0.91;
+}
+@media (min-width: 43.75em) {
+  .social__media-info {
+    font-size: 3.375rem;
+    line-height: 0.89;
+  }
 }
 .social__media-speed {
   color: var(--color-yellow500);
@@ -162,9 +263,24 @@ body {
   flex-direction: column;
   gap: 1.5rem;
 }
-.social__schedule-infoContainer {
+@media (min-width: 43.75em) {
+  .social__schedule {
+    grid-area: 4/1/6/9;
+  }
+}
+.social__schedule-infoContainer, .social__schedule-infoContent {
   margin-left: auto;
   margin-right: auto;
+}
+.social__schedule-img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 19.25rem;
+}
+@media (min-width: 43.75em) {
+  .social__schedule-img {
+    max-width: 22.3125rem;
+  }
 }
 .social__schedule-infoSchedule {
   font-size: 1.625rem;
@@ -172,11 +288,23 @@ body {
   text-align: center;
   line-height: 0.92;
 }
+@media (min-width: 43.75em) {
+  .social__schedule-infoSchedule {
+    font-size: 1.75rem;
+    line-height: 0.93;
+  }
+}
 .social__schedule-info {
   font-size: 1.125rem;
   font-weight: 400;
   text-align: center;
   line-height: 1.11;
+  max-width: 17.5rem;
+}
+@media (min-width: 43.75em) {
+  .social__schedule-info {
+    max-width: 22.4375rem;
+  }
 }
 
 .wrapper {
@@ -186,6 +314,11 @@ body {
   min-height: 100dvh;
   gap: 2rem;
   padding: 0.625rem;
+}
+@media (min-width: 43.75em) {
+  .wrapper {
+    padding: 2rem;
+  }
 }
 
 :root {

@@ -1,18 +1,28 @@
 @use "../util/functions" as f;
 @use "../util/variables" as v;
 @use "../util/mixins" as m;
+@use "../util/breakpoints" as b;
 
 .platforms {
   border-radius: f.rem(10);
   padding: f.rem(16);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  display: flex;
-  flex-direction: column;
-  gap: f.rem(24);
+  @include m.mobile-flex;
+
+  @include b.breakpoint(medium) {
+    @include m.tablet-platforms-grid-area;
+    padding: f.rem(24);
+    gap: f.rem(52);
+  }
 
   &__info {
     font-size: f.rem(26);
     font-weight: v.$font-medium;
     line-height: 0.88;
+
+    @include b.breakpoint(medium) {
+      font-size: f.rem(28);
+      line-height: 0.93;
+    }
   }
 }
