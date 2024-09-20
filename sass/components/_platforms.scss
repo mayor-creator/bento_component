@@ -15,6 +15,11 @@
     gap: f.rem(52);
   }
 
+  @include b.breakpoint(large) {
+    @include m.desktop-platforms-grid-area;
+    max-width: f.rem(256);
+  }
+
   &__info {
     font-size: f.rem(26);
     font-weight: v.$font-medium;

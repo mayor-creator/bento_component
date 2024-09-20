@@ -11,6 +11,12 @@
     grid-area: 8/5/9/9;
   }
 }
+@media (min-width: 56.25em) {
+  .ai {
+    grid-area: 6/1/10/4;
+    max-width: 16rem;
+  }
+}
 .ai__imgContainer {
   max-width: 13.75rem;
 }
@@ -47,6 +53,13 @@ body {
     height: 22.125rem;
   }
 }
+@media (min-width: 56.25em) {
+  .create {
+    grid-area: 1/1/6/4;
+    padding: 2rem;
+    max-width: 16rem;
+  }
+}
 .create__imgContainer {
   max-width: 11.875rem;
 }
@@ -60,6 +73,11 @@ body {
   .create__info {
     font-size: 2.25rem;
     line-height: 0.83;
+  }
+}
+@media (min-width: 56.25em) {
+  .create__info {
+    font-size: 2.5rem;
   }
 }
 .create__span {
@@ -84,6 +102,11 @@ body {
     gap: 0rem;
   }
 }
+@media (min-width: 56.25em) {
+  .followers {
+    grid-area: 8/6/10/12;
+  }
+}
 .followers__infoContainer {
   margin-left: auto;
   margin-right: auto;
@@ -104,6 +127,11 @@ body {
   .followers__imgContainer {
     margin-left: 0rem;
     margin-right: 0rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .followers__imgContainer {
+    max-width: 15.9375rem;
   }
 }
 .followers__info {
@@ -139,6 +167,15 @@ body {
     align-items: center;
     gap: 0rem;
     justify-content: space-between;
+  }
+}
+@media (min-width: 56.25em) {
+  .growth {
+    grid-area: 8/4/10/6;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
   }
 }
 .growth__infoContainer {
@@ -178,6 +215,12 @@ body {
     gap: 3.25rem;
   }
 }
+@media (min-width: 56.25em) {
+  .platforms {
+    grid-area: 5/4/8/6;
+    max-width: 16rem;
+  }
+}
 .platforms__info {
   font-size: 1.625rem;
   font-weight: 500;
@@ -205,6 +248,11 @@ body {
     gap: 1rem;
   }
 }
+@media (min-width: 56.25em) {
+  .schedule {
+    grid-area: 5/6/8/9;
+  }
+}
 .schedule__info {
   font-size: 1.625rem;
   font-weight: 500;
@@ -226,6 +274,11 @@ body {
 @media (min-width: 43.75em) {
   .social__media {
     grid-area: 1/1/3/9;
+  }
+}
+@media (min-width: 56.25em) {
+  .social__media {
+    grid-area: 1/4/5/9;
   }
 }
 .social__media-info {
@@ -266,6 +319,11 @@ body {
 @media (min-width: 43.75em) {
   .social__schedule {
     grid-area: 4/1/6/9;
+  }
+}
+@media (min-width: 56.25em) {
+  .social__schedule {
+    grid-area: 1/9/8/12;
   }
 }
 .social__schedule-infoContainer, .social__schedule-infoContent {

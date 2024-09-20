@@ -13,6 +13,11 @@
     @include m.tablet-ai-grid-area;
   }
 
+  @include b.breakpoint(large) {
+    @include m.desktop-ai-grid-area;
+    max-width: f.rem(256);
+  }
+
   &__imgContainer {
     max-width: f.rem(220);
   }

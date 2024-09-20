@@ -15,6 +15,12 @@
     height: f.rem(354);
   }
 
+  @include b.breakpoint(large) {
+    @include m.desktop-create-grid-area;
+    padding: f.rem(32);
+    max-width: f.rem(256);
+  }
+
   &__imgContainer {
     max-width: f.rem(190);
   }
@@ -28,6 +34,10 @@
     @include b.breakpoint(medium) {
       font-size: f.rem(36);
       line-height: 0.83;
+    }
+
+    @include b.breakpoint(large) {
+      font-size: f.rem(40);
     }
   }
 

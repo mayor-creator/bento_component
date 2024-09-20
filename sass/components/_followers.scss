@@ -14,6 +14,10 @@
     @include m.tablet-flex;
   }
 
+  @include b.breakpoint(large) {
+    @include m.desktop-followers-grid-area;
+  }
+
   &__infoContainer {
     margin-left: auto;
     margin-right: auto;
@@ -33,6 +37,10 @@
     @include b.breakpoint (medium) {
       margin-left: 0rem;
       margin-right: 0rem;
+    }
+
+    @include b.breakpoint(large) {
+      max-width: f.rem(255);
     }
   }
 

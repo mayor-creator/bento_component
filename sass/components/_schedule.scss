@@ -15,6 +15,10 @@
     gap: f.rem(16);
   }
 
+  @include b.breakpoint(large) {
+    @include m.desktop-schedule-grid-area;
+  }
+
   &__info {
     font-size: f.rem(26);
     font-weight: v.$font-medium;

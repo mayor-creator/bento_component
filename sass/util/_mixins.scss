@@ -24,6 +24,13 @@
   gap: 0rem;
 }
 
+@mixin desktop-flex {
+  display: flex;
+  flex-direction: column;
+  gap: f.rem(24);
+  align-items: flex-start;
+}
+
 @mixin tablet-grid {
   padding: f.rem(32);
 }
@@ -58,4 +65,36 @@
 
 @mixin tablet-ai-grid-area {
   grid-area: 8 / 5 / 9 / 9;
+}
+
+@mixin desktop-social-media-grid-area {
+  grid-area: 1 / 4 / 5 / 9;
+}
+
+@mixin desktop-platforms-grid-area {
+  grid-area: 5 / 4 / 8 / 6;
+}
+
+@mixin desktop-schedule-grid-area {
+  grid-area: 5 / 6 / 8 / 9;
+}
+
+@mixin desktop-social-schedule-grid-area {
+  grid-area: 1 / 9/ 8/ 12;
+}
+
+@mixin desktop-followers-grid-area {
+  grid-area: 8 / 6/ 10 / 12;
+}
+
+@mixin desktop-growth-grid-area {
+  grid-area: 8 / 4 / 10 / 6;
+}
+
+@mixin desktop-create-grid-area {
+  grid-area: 1 / 1 / 6 / 4;
+}
+
+@mixin desktop-ai-grid-area {
+  grid-area: 6 / 1 / 10 / 4;
 }

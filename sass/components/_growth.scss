@@ -15,6 +15,11 @@
     justify-content: space-between;
   }
 
+  @include b.breakpoint(large) {
+    @include m.desktop-growth-grid-area;
+    @include m.desktop-flex;
+  }
+
   &__infoContainer {
     max-width: f.rem(192);
   }

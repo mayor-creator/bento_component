@@ -13,6 +13,10 @@
     @include m.tablet-social-schedule-grid-area;
   }
 
+  @include b.breakpoint(large) {
+    @include m.desktop-social-schedule-grid-area;
+  }
+
   &-infoContainer,
   &-infoContent {
     margin-left: auto;
