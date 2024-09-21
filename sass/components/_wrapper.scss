@@ -5,8 +5,13 @@
 
 .wrapper {
   @include m.mobile-grid;
+}
 
-  @include b.breakpoint(medium) {
-    @include m.tablet-grid;
-  }
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  width: min(100% - f.rem(32), f.rem(1440));
+  margin-inline: auto;
 }

@@ -13,8 +13,7 @@
 }
 @media (min-width: 56.25em) {
   .ai {
-    grid-area: 6/1/10/4;
-    max-width: 16rem;
+    grid-area: 6/1/10/3;
   }
 }
 .ai__imgContainer {
@@ -55,9 +54,8 @@ body {
 }
 @media (min-width: 56.25em) {
   .create {
-    grid-area: 1/1/6/4;
+    grid-area: 1/1/6/3;
     padding: 2rem;
-    max-width: 16rem;
   }
 }
 .create__imgContainer {
@@ -171,7 +169,7 @@ body {
 }
 @media (min-width: 56.25em) {
   .growth {
-    grid-area: 8/4/10/6;
+    grid-area: 8/3/10/6;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -217,8 +215,7 @@ body {
 }
 @media (min-width: 56.25em) {
   .platforms {
-    grid-area: 5/4/8/6;
-    max-width: 16rem;
+    grid-area: 5/3/8/6;
   }
 }
 .platforms__info {
@@ -278,7 +275,7 @@ body {
 }
 @media (min-width: 56.25em) {
   .social__media {
-    grid-area: 1/4/5/9;
+    grid-area: 1/3/5/9;
   }
 }
 .social__media-info {
@@ -367,16 +364,18 @@ body {
 
 .wrapper {
   display: grid;
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+main {
+  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100dvh;
-  gap: 2rem;
-  padding: 0.625rem;
-}
-@media (min-width: 43.75em) {
-  .wrapper {
-    padding: 2rem;
-  }
+  width: min(100% - 2rem, 90rem);
+  margin-inline: auto;
 }
 
 :root {

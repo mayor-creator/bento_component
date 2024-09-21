@@ -18,7 +18,6 @@
   @include b.breakpoint(large) {
     @include m.desktop-create-grid-area;
     padding: f.rem(32);
-    max-width: f.rem(256);
   }
 
   &__imgContainer {
